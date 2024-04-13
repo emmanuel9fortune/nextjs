@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import './index.css'
-import '../styles/globals.css'
+import '../styles/globals.css' 
 import { Provider } from 'react-redux';
 import {store} from './store/Store';
 import React from 'react';

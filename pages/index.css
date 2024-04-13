@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Black+Ops+One&family=Bungee+Spice&family=Concert+One&family=Handjet:wght@100..900&family=Inter:wght@100..900&family=Keania+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik+Distressed&family=Rubik+Maze&family=Rubik+Wet+Paint&family=Staatliches&family=Tauri&family=Turret+Road:wght@200;300;400;500;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Workbench&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.dashboard{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.dashboard::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    padding: 15px 10px;
+    background-color: rgba(43, 43, 43, 0.363);
+    font-size: 25px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 4px 14px -3px black;
+    justify-content: center;
+    position: relative;
+}
+
+.header>h3{
+    margin-left: .5em;
+}
+
+.logo{
+    background-image: url('./img/log.jpg');
+    width: 2em;
+    height: 2em;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 2px 4px 14px -3px black;
+}
+
+.dashboardbod{
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    position: relative;
+}
+
+.dashboardbox1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboardbox1>p{
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.dashboardbox1>h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.boxlinks{
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.boxlink{
+    width: 30%;
+    padding: 12px 10px;
+    text-align: center;
+    background-color: #2a2a2a;
+    margin: 0 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 14px -3px rgba(34, 34, 34, 0.534);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.bxx1{
+    padding: 0;
+    color: white;
+}
+
+.bxx1:hover{
+    background-color: transparent !important;
+}
+
+.boxlink:hover,
+.pxx:hover{
+    color: white;
+    background-color: rgb(43, 43, 43) !important;
+}
+
+.pxx{
+    color: white;
+}
+
+.secboxdash{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.secboxdash1{
+    width: 95%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    padding: 17px 10px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.secboxdash1>p{
+    padding: 0 15px;
+}
+
+.iconfr{
+    position: absolute;
+    right: .5em;
+}
+
+.dashbodpop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dashpop{
+    position: absolute;
+    bottom: 0;
+    height: 550px;
+    width: 95%;
+    max-width: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dashpop>h3{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.warn{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px 0;
+    background-color: rgba(158, 115, 7, 0.788);
+    border-radius: 5px;
+}
+
+.warn>small{
+    padding: 0 5px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.twt{
+    background-image: url('./img/twt.png');
+    box-shadow: 2px 4px 14px -3px black;
+    width: 2.5em;
+    height: 2.5em;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.tel{
+    background-image: url('./img/tel.png');
+    box-shadow: 2px 4px 14px -3px black;
+    width: 2.5em;
+    height: 2.5em;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.rtw{
+    background-image: url('./img/rtw.png');
+    box-shadow: 2px 4px 14px -3px black;
+    width: 2.5em;
+    height: 2.5em;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.lik{
+    background-image: url('./img/lik.png');
+    box-shadow: 2px 4px 14px -3px black;
+    width: 2.5em;
+    height: 2.5em;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.secboxdash1>div{
+    padding: 0 5px;
+}
+
+.secboxdash1>button{
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 1em;
+    border-radius: 999px;
+}
+
+.closser{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.329);
+}
+
+.timeclaimer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 0;
+}
+
+.timeclaimer>p{
+    font-size: 60px;
+}
+
+.claimerbtn{
+    margin: 3em 0;
+    width: 210px;
+    padding: 15px 0;
+    background-color: rgb(158, 115, 7);
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 10px;
+    font-size: 700;
+    cursor: pointer;
+}
+
+.claimerbtn2{
+    margin: 3em 0;
+    width: 210px;
+    padding: 15px 0;
+    background-color: rgba(34, 34, 34, 0.534);
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 10px;
+    cursor: not-allowed;
+}
+
+.refferal{
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.192);
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+
+.refferal:hover{
+    color: grey;
+}
+
+.refferal>p{
+    padding: 0 10px;
+}
+
+
+
+
+
+/* sidebar css */
+.sidebar{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: rgb(43, 43, 43);
+    border-right: 1px solid rgba(128, 128, 128, 0.329);
+    padding: 35px 10px;
+    align-items: center;
+}
+
+.wallet-adapter-button-trigger{
+    background-color: transparent;
+}
+
+.depbtn{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    background-color: rgb(34, 34, 34);
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 14px -3px rgba(34, 34, 34, 0.534);
+}
+
+.depbtn>span{
+    padding: 0 10px;
+}
+
+.connectwalletbtn{
+    width: fit-content;
+    padding: 15px 10;
+    border-radius: 20px;
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 10px;
+}
+
+.connectwalletbtn:hover{
+    background-color: transparent !important;
+}
+
+.divicon{
+    width: 2.5em;
+    height: 2.5em;
+    padding: 10px;
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 50%;
+}
+
+
+/* profile */
+
+.profilebox{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.profilebox>img{
+    width: 8em;
+    height: 8em;
+    margin: 1em 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 2px 4px 14px -3px black;
+}
+
+.profilebox>p{
+    margin-bottom: 2em;
+}
+
+.prfwrts{
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    background-color: rgb(43, 43, 43);
+    border-radius: 10px;
+    box-shadow: 2px 4px 14px -3px black;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+}
+
+.logoutprf>p{
+    width: 100%;
+    text-align: center;
+}
+
+.transslips{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.transslips::-webkit-scrollbar{
+    display: none;
+}
+
+.trasnactionslip{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-bottom: 1px solid rgba(92, 91, 91, 0.678);
+}
+
+.emptcont{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: grey;
+}
+
+.emptnull{
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+.connection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* login */
+/* /////////////////// */
+.login{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.login>.div{
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 20px;
+    background-image: url('./img/bg.webp');
+    background-size: cover;
+}
+
+.loginlogo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginlogo>p{
+    padding: 10px 0;
+}
+
+.gl{
+    background-image: url('./img/gl.webp');
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+    margin: 0 5px;
+}
+
+.loginlogoimage{
+    width: 15em;
+    height: 15em;
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 50%;
+    margin: 10px 0;
+    background-image: url('./img/logo.jpg');
+    background-size: cover;
+}
+
+.loginlogo>button{
+    margin-top: 2em;
+    padding: 15px;
+    box-shadow: 2px 4px 14px -3px black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-image: url('./img/bg.webp');
+    background-size: cover;
+}
+
+.login>.div>p{
+    width: 90%;
+    padding: 10px 5px;
+    text-align: center;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+
+
+
+
+
+
+
+/* loader page */
+/* ////////////////////// */
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+}
+
+.loader>h1{
+    font-size: 50px;
+    margin-bottom: 2em;
+    color: white;
+    animation:  brnd ease 2s infinite;
+    transition: 1s;
+}
+
+@keyframes brnd {
+    0%{color: grey;}
+    50%{color: white;}
+    100%{color: grey;}
+}
+
+.claimerbtn{
+    cursor: pointer;
+}
+
+.dots{
+    width: 200px;
+    height: -50vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 4px 14px -3px black;
+}
+
+.dotbox{
+    width: 2em;
+    height: 2em;
+}
+
+.dot{
+    height: .3em;
+    width: .3em;
+    background-color: white;
+    border-radius: 50%;
+    margin:5px;
+}
+
+.dot{
+    animation: rise 2000ms infinite alternate;
+}
+
+@keyframes rise {
+    100% {transform: translateY(-100px)}
+}
+
+@for $i from 1 through 16{
+    .dot:nth-child(#{$i}){
+        animation-delay: -100ms * $i ;
+    }
+}
+
+.dot:nth-child(1){
+    animation-delay: 100ms;
+}
+
+.dot:nth-child(2){
+    animation-delay: 200ms;
+}
+
+.dot:nth-child(3){
+    animation-delay: 300ms;
+}
+
+.dot:nth-child(4){
+    animation-delay: 400ms;
+}
+
+.dot:nth-child(5){
+    animation-delay: 500ms;
+}
+
+.dot:nth-child(6){
+    animation-delay: 600ms;
+}
+
+.dot:nth-child(7){
+    animation-delay: 700ms;
+}
+
+.dot:nth-child(8){
+    animation-delay: 800ms;
+}
+
+.dot:nth-child(9){
+    animation-delay: 900ms;
+}
+
+.dot:nth-child(10){
+    animation-delay: 1000ms;
+}
+
+.dot:nth-child(11){
+    animation-delay: 1100ms;
+}
+
+.dot:nth-child(12){
+    animation-delay: 1200ms;
+}
+
+.dot:nth-child(13){
+    animation-delay: 1300ms;
+}
+
+.dot:nth-child(14){
+    animation-delay: 1400ms;
+}
+
+.dot:nth-child(15){
+    animation-delay: 1500ms;
+}
+
+.dot:nth-child(16){
+    animation-delay: 1600ms;
+}
+
+.dot:nth-child(17){
+    animation-delay: 1700ms;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .loginlogo>p{
+        margin-top: 2em;
+    }
+
+    .loginlogoimage{
+        margin-top: 3em;
+        width: 20em;
+        height: 20em;
+    }
+
+    .loginlogo>button{
+        margin-top: 6em;
+        padding: 20px ;
+    }
+
+    .login{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .login::-webkit-scrollbar{
+        display: none;
+    }
+
+    .loginlogo{
+        width: 95%;
+        padding-top: 5em;
+    }
+
+    .login>.div{
+        width: 95%;
+        margin-top: 6em;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .dashboard{
+        width: 100%;
+    }
+
+    .dashpop{
+        position: absolute;
+        bottom: 0;
+        height: 750px;
+    }
+
+    .timeclaimer>p{
+        font-size: 50px;
+    }
+
+    .dashboardbod{
+        width: 90%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1em;
+        width: 1.2em;
+        margin: 0 10px;
+        position: absolute;
+        left: .5em;
+    }
+
+    .menuline{
+        width: 100%;
+        padding: 1px;
+        margin: 3.5px 0;
+        background-color: white;
+    }
+
+    .header{
+        box-shadow: 2px 4px 14px -3px black;
+    }
+
+    .boxlinks{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boxlink{
+        width: 33.333%;
+        padding: 10px 0;
+        box-shadow: 2px 4px 14px -3px rgb(34, 34, 34);
+    }
+
+    .bxx{
+        padding: 20px 0;
+        box-shadow: 2px 4px 14px -3px black;
+    }
+
+    .secboxdash1{
+        width: 90%;
+        margin: 10px 0;
+        box-shadow: 2px 4px 14px -3px black;
+    }
+
+    .mobbarpop{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        color: white;
+        border-left: 1px solid rgba(128, 128, 128, 0.329);
+    }
+
+    .mobsidebar{
+        position: fixed;
+        left: .7em;
+        height: 98%;
+        width: 110px;
+        background-color: rgb(43, 43, 43);
+        box-shadow: 2px 4px 14px -3px black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+        transition: 2s;
+    }
+
+    .mobsidebarhd{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+    }
+
+    .mobsidebarhd>p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .fstmobbox{
+        height: 30%;
+        padding-top: 1em;
+    }
+
+    .mobicons{
+        width: 95%;
+        padding: 15px 10px;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobicons>small{
+        color: grey;
+    }
+
+    .mobbxx1>p{
+        padding: 0;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .mobbxx1:hover{
+        background-color: transparent !important;
+    }
+
+    .mobwalletbxbtn1{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        box-shadow: 2px 4px 14px -3px black;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+    }
+
+    .mobwalletbxbtn{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        box-shadow: 2px 4px 14px -3px black;
+        position: relative;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+    }
+
+    .mobwalletbxbtn>.mobbxx1>p{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebarcloser{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+
+    .refferal{
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 300px){
+    .mobsidebar{
+        position: fixed;
+        left: 1em;
+        height: 98%;
+        width: 90px;
+        background-color: rgb(43, 43, 43);
+        box-shadow: 2px 4px 14px -3px black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .refferal{
+        margin: 15px 0;
+    }
+
+    .dashpop{
+        position: absolute;
+        bottom: 0;
+        height: 550px;
+    }
+
+    .warn{
+        display:flex;
+        flex-direction: column;
+        padding: 5px 5px;
+    }
+
+    .menuline{
+        padding: 1px;
+        width: 1.2em;
+    }
+
+    .warn>small{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .secboxdash1>div>p{
+        font-size: 12px;
+    }
+
+    .secboxdash1>button{
+        position: absolute;
+        right: 5px;
+        top: 2em;
+        padding: 5px 15px;
+    }
+
+    .refferal{
+        margin: 10px 0;
+    }
+}

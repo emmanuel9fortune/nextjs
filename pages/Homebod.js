@@ -7,7 +7,7 @@ import { useWallet } from '@solana/wallet-adapter-react'
 import TransactionQRModal from '../components/transaction/TransactionQRModal'
 import { getAvatarUrl } from "../functions/getAvatarUrl"
 import {  WalletMultiButton } from '@solana/wallet-adapter-react-ui'
-import {FireIcon, GiftIcon, PaperAirplaneIcon, ClockIcon, ChevronRightIcon, MinusIcon, ExclamationTriangleIcon,ExclamationCircleIcon, ClipboardDocumentListIcon, CheckBadgeIcon, UserIcon, QueueListIcon, ArrowLeftEndOnRectangleIcon} from '@heroicons/react/24/outline'
+import {FireIcon, GiftIcon, PaperAirplaneIcon, ClockIcon, ChevronRightIcon, MinusIcon, ExclamationTriangleIcon,ExclamationCircleIcon, ClipboardDocumentListIcon, CheckBadgeIcon, UserIcon, QueueListIcon} from '@heroicons/react/24/outline'
 import { selectinfo } from './store/infoSlice'
 import { useSelector } from 'react-redux';
 import { truncate } from "../utils/string"
@@ -368,7 +368,7 @@ const Homebod = () => {
 
                     <header className="sidebar">
                         <Profile setModalOpen={setTransactionQRModalOpen} avatar={avatar} publicKey={publicKey} />
-                        <TransactionQRModal ArrowLeftEndOnRectangleIcon={ArrowLeftEndOnRectangleIcon} avatar={avatar} modalOpen={transactionQRModalOpen} setModalOpen={setTransactionQRModalOpen} userAddress={publicKey} myKey={publicKey} />
+                        <TransactionQRModal avatar={avatar} modalOpen={transactionQRModalOpen} setModalOpen={setTransactionQRModalOpen} userAddress={publicKey} myKey={publicKey} />
 
                         <NavMenu connected={connected} publicKey={publicKey} />
 

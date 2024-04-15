@@ -10,7 +10,7 @@ import { selectinfo } from '../../pages/store/infoSlice'
 import { toast } from 'react-toastify'
 import { Timestamp, doc, updateDoc } from 'firebase/firestore'
 
-
+  
 export const useCashapp = () => {
     const user = useSelector(selectUser)
     const info = useSelector(selectinfo)

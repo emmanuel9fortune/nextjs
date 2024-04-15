@@ -9,4 +9,4 @@ function Slipbars({frnds}) {
   )
 }
 
-export default Slipbars
+export default Slipbars  

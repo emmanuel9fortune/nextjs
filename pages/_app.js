@@ -9,7 +9,7 @@ import React from 'react';
 
 const WalletConnectionProvider = dynamic(()=> import('../context/WalletConnectionProvider'),{
     ssr : false
-})
+})  
 
 function MyApp({ Component, pageProps }) {
     return (

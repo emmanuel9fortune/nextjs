@@ -3,7 +3,7 @@ import { classNames } from '../../utils/classNames'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { truncate } from '../../utils/string'
 require('@solana/wallet-adapter-react-ui/styles.css')
-
+ 
 const NavMenu = ({ connected, publicKey }) => {
     const menus = [
         {

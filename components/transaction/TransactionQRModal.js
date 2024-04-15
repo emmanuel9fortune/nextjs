@@ -10,7 +10,7 @@ import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Image from 'next/image'
 
-
+  
 
 const TransactionQRModal = ({ modalOpen, setModalOpen, userAddress, avatar, ArrowLeftEndOnRectangleIcon }) => {
 

@@ -4,7 +4,7 @@ const Action = ({ setModalOpen, publickey }) => {
     const onNewTransaction = () => {
         setModalOpen(true)
     }
-
+ 
     return (
         <div style={{width:'100%', alignItems:'center', justifyContent:'center', display:'flex'}}>
             { publickey !== null?

@@ -20,7 +20,7 @@ import { db } from './firebase'
 import Slipbars from './Slipbars'
 import axios from 'axios'
 import Connection from './Connection'
-import Loader from './Loader'
+import Loader from './Loader'   
 import Image from 'next/image'
 
 

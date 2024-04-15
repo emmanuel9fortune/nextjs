@@ -11,7 +11,7 @@ const TransactionsList = ({ transactions }) => {
         setCurrentTransactionID(transactionID)
         setModalOpen(value)
     }
-
+  
     return (
         <div>
             <div className="bg-[#f6f6f6] pb-4 pt-10">

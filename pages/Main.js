@@ -20,7 +20,7 @@ function Main() {
               setuserinfo( doc.data());
           });
   
-          return ()=>{
+          return ()=>{  
             unsub()
           }
     },[user.uid])

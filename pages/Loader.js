@@ -20,7 +20,7 @@ function Loader() {
             <div className='dot'></div>
             <div className='dot dotbox'></div>
         </div>
-    </div>
+    </div>   
   )
 }
 

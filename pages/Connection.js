@@ -13,7 +13,7 @@ function Connection(props) {
                 </div>
             )}
          />
-    </div>
+    </div>   
   )
 }
 

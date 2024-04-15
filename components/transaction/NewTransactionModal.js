@@ -6,7 +6,7 @@ const NewTransactionModal = ({ modalOpen, setModalOpen }) => {
 
     const {doTransaction, amount, setAmount, receiver, setReceiver, transactionPurpose, setTransactionPurpose, err} = useCashapp()
 
-   
+     
 
     const onPay = async () => {
         

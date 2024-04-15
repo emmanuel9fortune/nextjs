@@ -12,7 +12,7 @@ import Image from 'next/image'
 
   
 
-const TransactionQRModal = ({ modalOpen, setModalOpen, userAddress, avatar, ArrowLeftEndOnRectangleIcon }) => {
+const TransactionQRModal = ({ modalOpen, setModalOpen, userAddress, avatar }) => {
 
     const info = useSelector(selectinfo)
 
@@ -53,7 +53,6 @@ const TransactionQRModal = ({ modalOpen, setModalOpen, userAddress, avatar, Arro
                     </CopyToClipboard>
                     <div onClick={()=>signOut(auth)} className="prfwrts logoutprf">
                         <p>Logout</p>
-                        {/* <ArrowLeftEndOnRectangleIcon style={{width:'25px'}}/> */}
                      </div>
 
                 </div>

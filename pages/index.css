@@ -52,7 +52,7 @@ input::-webkit-inner-spin-button {
 }
 
 .logo{
-    background-image: url('./img/log.jpg');
+    background-image: url('../public/log.jpg');
     width: 2em;
     height: 2em;
     background-size: cover;
@@ -215,7 +215,7 @@ input::-webkit-inner-spin-button {
 }
 
 .twt{
-    background-image: url('./img/twt.png');
+    background-image: url('../public/twt.png');
     box-shadow: 2px 4px 14px -3px black;
     width: 2.5em;
     height: 2.5em;
@@ -225,7 +225,7 @@ input::-webkit-inner-spin-button {
 }
 
 .tel{
-    background-image: url('./img/tel.png');
+    background-image: url('../public/tel.png');
     box-shadow: 2px 4px 14px -3px black;
     width: 2.5em;
     height: 2.5em;
@@ -235,7 +235,7 @@ input::-webkit-inner-spin-button {
 }
 
 .rtw{
-    background-image: url('./img/rtw.png');
+    background-image: url('../public/rtw.png');
     box-shadow: 2px 4px 14px -3px black;
     width: 2.5em;
     height: 2.5em;
@@ -245,7 +245,7 @@ input::-webkit-inner-spin-button {
 }
 
 .lik{
-    background-image: url('./img/lik.png');
+    background-image: url('../public/lik.png');
     box-shadow: 2px 4px 14px -3px black;
     width: 2.5em;
     height: 2.5em;
@@ -521,7 +521,7 @@ input::-webkit-inner-spin-button {
     background-color: #2a2a2a;
     box-shadow: 2px 4px 14px -3px black;
     border-radius: 20px;
-    background-image: url('./img/bg.webp');
+    background-image: url('../public/bg.webp');
     background-size: cover;
 }
 
@@ -538,7 +538,7 @@ input::-webkit-inner-spin-button {
 }
 
 .gl{
-    background-image: url('./img/gl.webp');
+    background-image: url('../public/gl.webp');
     background-size: cover;
     width: 2em;
     height: 2em;
@@ -551,7 +551,7 @@ input::-webkit-inner-spin-button {
     box-shadow: 2px 4px 14px -3px black;
     border-radius: 50%;
     margin: 10px 0;
-    background-image: url('./img/logo.jpg');
+    background-image: url('../public/logo.jpg');
     background-size: cover;
 }
 
@@ -562,7 +562,7 @@ input::-webkit-inner-spin-button {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    background-image: url('./img/bg.webp');
+    background-image: url('../public/bg.webp');
     background-size: cover;
 }
 
